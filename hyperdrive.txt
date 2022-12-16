@@ -1,0 +1,28 @@
+[2022-12-16T07:08:56.142429][GENERATOR][INFO]Trying to sample '4' jobs from the hyperparameter space
+[2022-12-16T07:08:57.0911403Z][SCHEDULER][INFO]Scheduling job, id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_0' 
+[2022-12-16T07:08:57.1959125Z][SCHEDULER][INFO]Scheduling job, id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_1' 
+[2022-12-16T07:08:57.3223076Z][SCHEDULER][INFO]Scheduling job, id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_2' 
+[2022-12-16T07:08:57.4141038Z][SCHEDULER][INFO]Scheduling job, id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_3' 
+[2022-12-16T07:08:57.391332][GENERATOR][INFO]Successfully sampled '4' jobs, they will soon be submitted to the execution target.
+[2022-12-16T07:08:57.9489009Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_3' 
+[2022-12-16T07:08:57.9682942Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_2' 
+[2022-12-16T07:08:57.9779105Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_0' 
+[2022-12-16T07:08:57.9699612Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_1' 
+[2022-12-16T07:12:56.180201][GENERATOR][INFO]Trying to sample '4' jobs from the hyperparameter space
+[2022-12-16T07:12:56.4516492Z][SCHEDULER][INFO]Scheduling job, id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_4' 
+[2022-12-16T07:12:56.5885515Z][SCHEDULER][INFO]Scheduling job, id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_5' 
+[2022-12-16T07:12:56.6766980Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_4' 
+[2022-12-16T07:12:56.7165883Z][SCHEDULER][INFO]Scheduling job, id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_6' 
+[2022-12-16T07:12:56.8211879Z][SCHEDULER][INFO]Scheduling job, id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_7' 
+[2022-12-16T07:12:56.8093674Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_5' 
+[2022-12-16T07:12:56.776937][GENERATOR][INFO]Successfully sampled '4' jobs, they will soon be submitted to the execution target.
+[2022-12-16T07:12:56.9047848Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_6' 
+[2022-12-16T07:12:57.0134219Z][SCHEDULER][INFO]Successfully scheduled a job. Id='HD_c93ff7d8-c924-4a84-ba67-2fa5c47464eb_7' 
+[2022-12-16T07:13:05.351937][CONTROLLER][INFO]Experiment has been marked for cancellation.
+[2022-12-16T07:13:05.352001][CONTROLLER][WARNING][HDFlowDebug]The first 4 jobs have failed due to usererror. The system is cancelling the further child runs and failing the experiment. Please resolve the issues before resubmitting the experiment.
+[2022-12-16T07:14:05.204237][CONTROLLER][WARNING]Marking the experiment for user error because initial child jobs have failed due to user error
+[2022-12-16T07:14:05.315524][CONTROLLER][INFO]Experiment has been marked for failure.
+[2022-12-16T07:14:05.315580][CONTROLLER][WARNING]Marking the experiment for user error because initial child jobs have failed due to user error
+[2022-12-16T07:14:05.429932][CONTROLLER][INFO]Experiment has been marked for failure.
+[2022-12-16T07:14:05.429985][CONTROLLER][WARNING]User errors were found in at least one of the child runs.
+[2022-12-16T07:14:05.783575][CONTROLLER][INFO]Experiment was 'ExperimentStatus.RUNNING', is 'ExperimentStatus.FAILED'.
