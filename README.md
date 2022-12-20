@@ -208,9 +208,9 @@ Deployment of the model
 
 Testing the resulting web service
 
-HyperDrive’s best run accuracy = 78.33%
+   HyperDrive’s best run accuracy = 78.33%
 
-AutoML’s best run accuracy = 86.61%
+   AutoML’s best run accuracy = 86.61%
 
 Thus,Automl's model has the highest accuracy.The model with the best accuracy is deployped,so the AutoML's best model is deployed.
 
@@ -226,6 +226,8 @@ Initially, the best model is registered and it's necessary files are downloaded.
 
 ![MD - 3](https://user-images.githubusercontent.com/64579075/208571757-8ce67e44-d61d-4676-84cc-a63be81a91cc.PNG)
 
+![Endpoint consume](https://user-images.githubusercontent.com/64579075/208572244-ac945bce-59f3-4af4-9b08-be78b8b13216.PNG)
+
 ![MD - 4](https://user-images.githubusercontent.com/64579075/208571766-acccb144-4b93-4dd9-8b36-f063c7ae056c.PNG)
 
 
@@ -235,5 +237,4 @@ Initially, the best model is registered and it's necessary files are downloaded.
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+The screen recording can be found here and it shows the project in action.
