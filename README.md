@@ -1,5 +1,3 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include. https://github.com/Harini-Pavithra/Machine-Learning-Engineer-with-Microsoft-Azure-Nanodegree
-
 ## Capstone Project - Azure Machine Learning Engineer (Heart Failure Prediction)
 For this project, we will create two models: one using Automated Machine Learning (AutoML) and one customized model whose hyperparameters are tuned using HyperDrive. We will then compare the performance of both models and deploy the most optimal performing model. The model can be consumed from the generated REST endpoint.
 
@@ -232,6 +230,8 @@ Initially, the best model is registered and it's necessary files are downloaded.
 
 
 ## Screen Recording
+Here is the screencast[link] https://drive.google.com/file/d/13_FM60ZxVswgFP0zMaoQZL2b4EwsLB4x/view?usp=sharing shows the entire process of the workflow:
+
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 - A working model
 - Demo of the deployed  model
