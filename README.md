@@ -58,17 +58,59 @@ The data includes the following features:
 •	DEATH_EVENT [ Target]: Target column which tells if the patient deceased during the follow-up period
 
 
-
 ### Access
 We downloaded the dataset from the UCI Machine Learning Repository and uploaded it to this GitHub repository. In both notebooks the dataset was read in using Dataset.Tabular.from_delimited_files using the url of that dataset at the UCI machine learning repository site and then registered in Azure if it hadn't been already.
 
+![dataset - register](https://user-images.githubusercontent.com/64579075/208568526-33fe8ce0-a678-494c-994b-607d2f110333.PNG)
+
+![dataset - sample](https://user-images.githubusercontent.com/64579075/208568542-d821c48b-9db4-4c1e-bcc0-9931973eca83.PNG)
+
+
 ## Automated ML
-Give an overview of the `automl` settings and configuration you used for this experiment
+In this part of the project, we make a use of Microsoft Azure Cloud to configure a cloud-based machine learning model and consequently deploy it. We first create a compute target and then train a set of machine learning models leveraging AutoML to automatically train and tune a them using given target metric. 
+
+In this case we selected target metric is “accuracy”. A datastore retrieved by data_store = ws.get_default_datastore() is used to upload the dataset used to train the ML model and it is registered by using the following command
+
+# Create AML Dataset and register it into Workspace
+dataset = Dataset.Tabular.from_delimited_files(data_url)
+    #Register Dataset in Workspace
+    dataset = dataset.register(workspace = ws,name = key,description = description_text)
+
+## AutoML Configuration and Settings
+
+Here we are dealing with a binary classification. Therefore, the argument task is set to “classification” and our target column is “DEATH_EVENT” also need to set label_column_name="DEATH_EVENT". 
+
+The dataset itself specified in training_data=dataset and the compute target that we provisioned is set with compute_target=compute_target.
+
+Besides other arguments that are self-explanatory, to automate Feature engineering AzureML enables this through featurization that needs to be set to True. This way features that best characterize the patterns in the data are selected to create predictive models.
+
+Here is the code to set and configure the AutoML experiment
+
+![Automl-setting-image](https://user-images.githubusercontent.com/64579075/208565775-b7c58225-ab18-4fd2-9ff7-0fab95350992.PNG)
+
+Once the AutoML experiment is completed, we then select the best model in terms of “accuracy” out of all models trained and deploy it using Azure Container Instance (ACI). So that the model can then be consumed via a REST API.
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+The AutoML experiment run generated VotingEnsemble algorithm as the best model with accuracy of 0.86617
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+![Automl-1](https://user-images.githubusercontent.com/64579075/208567896-6e98280e-d517-43ce-bb1c-922e8750c505.PNG)
+
+# Run details
+
+![Automl - rundetails](https://user-images.githubusercontent.com/64579075/208568030-6bfdc920-27be-450d-91fa-6d08b5ad8aec.PNG)
+
+For more comprehensive details please see automl.ipynb notebook.
+
+## Best model in Azure Portal
+
+![Automl - 2](https://user-images.githubusercontent.com/64579075/208568391-ff0e451a-ae4a-4644-ac43-260563e4afd7.PNG)
+
+![Automl - 3](https://user-images.githubusercontent.com/64579075/208568405-28f3dc56-5550-4532-9ed7-e289bb7c8088.PNG)
+
+![Automl - 4](https://user-images.githubusercontent.com/64579075/208568421-d5263024-6f02-4ccd-836e-441a66fb365c.PNG)
+
+![Automl - other metrics](https://user-images.githubusercontent.com/64579075/208568440-6243053d-1ad8-4b04-9f77-aefe95592cf1.PNG)
+
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
