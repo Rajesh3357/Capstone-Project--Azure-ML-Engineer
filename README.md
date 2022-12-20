@@ -60,12 +60,10 @@ The data includes the following features:
 
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
-
 We downloaded the dataset from the UCI Machine Learning Repository and uploaded it to this GitHub repository. In both notebooks the dataset was read in using Dataset.Tabular.from_delimited_files using the url of that dataset at the UCI machine learning repository site and then registered in Azure if it hadn't been already.
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+Give an overview of the `automl` settings and configuration you used for this experiment
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
