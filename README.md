@@ -170,8 +170,11 @@ The best model parameters are retrieved by using this code:
 
 Best Experiment Run:
  Best Run Id: HD_f36a8c91-66f4-4a85-89f8-5feeb35730ae_3
+ 
  Accuracy: 0.7833333333333333
+ 
  Regularization Strength: 0.6999143187991206
+ 
  Max iterations: 500
 
 Improvement
