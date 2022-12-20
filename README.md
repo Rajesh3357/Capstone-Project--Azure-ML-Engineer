@@ -115,6 +115,18 @@ For more comprehensive details please see automl.ipynb notebook.
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
+In this section I have used a custom-coded model — a standard Scikit-learn Logistic Regression - which hyperparameters I optimized using HyperDrive.
+A Hyperdrive run is used to sweep over model parameters. The following steps are part of the process:
+•	Data preprocessing
+•	Splitting data into train and test sets
+•	Setting logistic regression parameters:
+           o	--C - Inverse of regularization strength
+           o	--max_iter - Maximum number of iterations convergence
+•	Azure Cloud resources configuration
+•	Creating a HyperDrive configuration using the estimator, hyperparameter sampler, and policy
+•	Retrieve the best run and save the model from that run
+
+
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
