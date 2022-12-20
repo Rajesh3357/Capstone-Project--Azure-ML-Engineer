@@ -232,4 +232,4 @@ Initially, the best model is registered and it's necessary files are downloaded.
 
 
 ## Screen Recording
-The screen recording can be found [here]https://drive.google.com/file/d/13_FM60ZxVswgFP0zMaoQZL2b4EwsLB4x/view?usp=sharing and it shows the project in action.
+The screen recording can be found [here](https://drive.google.com/file/d/13_FM60ZxVswgFP0zMaoQZL2b4EwsLB4x/view?usp=sharing) and it shows the project in action.
