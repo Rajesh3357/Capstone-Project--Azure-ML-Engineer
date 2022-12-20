@@ -232,11 +232,4 @@ Initially, the best model is registered and it's necessary files are downloaded.
 
 
 ## Screen Recording
-Here is the screencast[link] https://drive.google.com/file/d/13_FM60ZxVswgFP0zMaoQZL2b4EwsLB4x/view?usp=sharing shows the entire process of the workflow:
-
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
-
-The screen recording can be found here and it shows the project in action.
+The screen recording can be found [here]https://drive.google.com/file/d/13_FM60ZxVswgFP0zMaoQZL2b4EwsLB4x/view?usp=sharing and it shows the project in action.
